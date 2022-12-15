@@ -1,0 +1,148 @@
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: white;
+}
+#Calender{
+    display: table;
+    border-collapse: collapse;
+    width:  90vh;
+    height: 80vh;
+    table-layout: fixed;
+}
+h1{
+    color:gray;
+    text-align: center;
+    font-size: 5vh;
+}
+.dayOfWeek th:nth-of-type(1){
+    background-color: lightcoral;
+}
+.dayOfWeek th:nth-of-type(7){
+    background-color: lightblue;
+}
+.plan{
+    vertical-align: top;
+    word-wrap: break-word;
+    height: 10%;
+    border-bottom: solid 2px;
+    border-color: gray;
+    color: #1b1b1b;
+    font-size: 2vh;
+    padding-top: 0;
+}
+.day,.plan{
+    border-right: solid 2px;
+    border-right-color: #dcdcdc;
+}
+.plansButton{
+    background:transparent;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    border: none;
+}
+.plansButton:hover{
+    background-color: #dcdcdc;
+}
+.PlanEditorBody{
+    background-color: white;
+    width: 25%;
+    left: 50vw;
+    height: 70%;
+    position: absolute;
+    transform-origin: 50% 50%;
+    transform: translateX(-50%);
+
+    border: 2px solid #aaa;
+    z-index: 2;
+}
+
+.InputPlanField{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 10%;
+    left: 10%;
+    top: 10%;
+    bottom: 10%;
+}
+.OverRay{
+	position:fixed;
+	top:0;
+	left:0;
+	z-index: 1;
+	width:100%;
+	height:120%;
+	background-color:rgba(0,0,0,0.5);
+}
+#PlanTitle{
+    right: 10%;
+    top: 10%;
+    height: 7%;
+    font-size: 50px;
+    padding: 10px;
+}
+#PlanTime{
+    margin: 5% 0;
+    height: 10%;
+}
+#PlanExplanation{
+    vertical-align: top;
+    height: 50vh;
+    padding-top: 0;
+    font-size: 30px;
+    word-wrap: break-word;
+}
+.SaveButton{
+    background-color: #1b1b1b;
+    color: white;
+    width: 100px;
+    height: 50px;
+    bottom: 10%;
+    font-weight: 10%;
+    margin-top: 10%;
+}
+
+.day{
+    height: 5%;
+    font-size: 3vh;
+    font-family: "sans-serif";
+    font-weight: bold;
+    color: gray;
+}
+.Calenders{
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transform-origin: 50% 50%;
+    transform: translateX(-50%);
+    left:50%;
+}
+.leftButton{
+    height: 10%;
+    width: 10%;
+    
+    color: #1b1b1b;
+    border: 0;
+    background-color: transparent;
+    transform: rotate(180deg);
+}
+.rightButton{
+    height: 10%;
+    width: 10%;
+    
+    color: #1b1b1b;
+    border: 0;
+    background-color: transparent;
+}
+
+th{
+    color:aliceblue;
+    background-color: gray;
+}
+.Hide{
+    display: none;
+}
