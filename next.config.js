@@ -3,7 +3,8 @@ const nextConfig = {
   reactStrictMode: true,
 }
 module.exports = {
-  output: 'standalone',
-}
+  basePath: process.env.GITHUB_ACTIONS && "/yukkuripannda.github.io",
+  trailingSlash: true,
+};
 
 module.exports = nextConfig
