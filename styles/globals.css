@@ -14,10 +14,16 @@ a {
   text-align: left;
   padding: 10px 20px;
 }
-.main {
+.mainPC {
   margin: 0 auto;
   width: 60vw;
   max-width: 75vw;
   padding: 20px;
+  background-color: white;
+}
+.mainMobile{
+  margin: 0 auto;
+  width: 100vw;
+  padding: 1px;
   background-color: white;
 }

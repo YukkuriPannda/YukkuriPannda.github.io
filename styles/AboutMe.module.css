@@ -1,8 +1,15 @@
-.headExplain{
+.headExplain.PC{
     display: flex;
 }
-.myIcon{
-    margin: 40px 20px;
+.myIcon.PC{
+    width: 175px;
+    height: 175px;
+    margin: 40px auto;
+}
+.headExplain.Mobile{
+    text-align: center;
+}
+.headExplain.Mobile .myIcon{
     width: 175px;
     height: 175px;
 }

@@ -2,15 +2,20 @@
     background-color: #1b1b1b;
     color: whitesmoke;
     padding-bottom: 5px;
-    margin: 0 0;
+    margin: auto;
+    width: 25%;
     height: 1%;
-    width: 7vw;
+}
+.link.PC{
+    padding: 1px 30vw;
+}
+.link.Mobile{
+    padding: 1px 10px; 
 }
 .link {
     display: flex;
     text-align:center;
     background-color: #1b1b1b;
-    padding: 1px 1px;
     border-top:solid 2px #3e3e3e;
     justify-content: center;
 }

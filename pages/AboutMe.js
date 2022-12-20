@@ -4,16 +4,35 @@ import CalenderPlanField from '../Compornents/BasicCard/CalenderPlanField';
 import Title from '../Compornents/Title/Title';
 import TopLinks from '../Compornents/TopLinks/TopLinks';
 import style from '../styles/AboutMe.module.css'
+import { useEffect, useState } from 'react';
+
 export default function AboutMe() {
+  let [DeviceType,SetDeviceType] = useState('PC');
+  useEffect(() =>{
+    const mobileList = ["iPhone","iPad","Android"];
+    const mobileChecked = mobileList.filter(item =>{
+      return navigator.userAgent.search(item) != -1;
+    });
+    if(mobileChecked.length > 0){
+      SetDeviceType('Mobile');
+    }else{
+      SetDeviceType('PC');
+    }
+  });
+  
+  let ClassName;
+  let line;
+  if(DeviceType == "Mobile")ClassName = style.Mobile;
+  else {ClassName = style.PC;line = (<div className={style.line}></div>);}
   
   return (
     <div>
-        <Title />
-        <TopLinks/>
-      <div className= {`main ${style.main}`}>
-        <div className={style.headExplain}>
-          <img className = {style.myIcon}src = "/MyIcon.jpg"/>
-          <div className={style.line}></div>
+      <Title deviceType = {DeviceType}/>
+      <TopLinks deviceType = {DeviceType}/>
+      <div className= {`main${DeviceType} ${style.main}`}>
+        <div className={`${style.headExplain} ${ClassName}`}>
+          <img className = {`${style.myIcon} ${ClassName}`}src = "/MyIcon.jpg"/>
+          {line}
           <div className={style.explainTex}>
             <h1>About me</h1>
             <p>
