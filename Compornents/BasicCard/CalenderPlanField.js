@@ -11,8 +11,5 @@ export default function CalenderPlanField(props){
             </p>
         </div>
     );
-    function CreatePlan(){
-
-    }
     
 }
