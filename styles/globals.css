@@ -13,12 +13,14 @@ a {
 .bodyText{
   text-align: left;
   padding: 10px 20px;
+  width: 100vw;
 }
 .mainPC {
   margin: 0 auto;
-  width: 60vw;
+  width: 50vw;
   max-width: 75vw;
-  padding: 20px;
+  min-width: 550px;
+  padding: 50px;
   background-color: white;
 }
 .mainMobile{
@@ -26,4 +28,15 @@ a {
   width: 100vw;
   padding: 1px;
   background-color: white;
+}
+.plus{
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  background: transparent;
+  border: transparent;
+}
+.plus img{
+  height: 30px;
+  fill: #1b1b1b;
 }

@@ -1,10 +1,8 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import CalenderPlanField from '../Compornents/BasicCard/CalenderPlanField';
-import Title from '../Compornents/Title/Title';
-import TopLinks from '../Compornents/TopLinks/TopLinks';
 import style from '../styles/AboutMe.module.css'
 import { useEffect, useState } from 'react';
+import BasicPageTemplate from './BasicPageTemplate';
 
 export default function AboutMe() {
   let [DeviceType,SetDeviceType] = useState('PC');
@@ -27,9 +25,7 @@ export default function AboutMe() {
   
   return (
     <div>
-      <Title deviceType = {DeviceType}/>
-      <TopLinks deviceType = {DeviceType}/>
-      <div className= {`main${DeviceType} ${style.main}`}>
+      <BasicPageTemplate>
         <div className={`${style.headExplain} ${ClassName}`}>
           <img className = {`${style.myIcon} ${ClassName}`}src = "/MyIcon.jpg"/>
           {line}
@@ -57,9 +53,9 @@ export default function AboutMe() {
           </div>
 
           </div>
-        <p>電電演習の点数は36点ですゴミカス。</p>
+        <p>ｵｼｬｼﾝを取ったりｺｫﾄﾞを書いたり、素晴らしい友人に支えられて。</p>
         
-      </div>
+      </BasicPageTemplate>
     </div>
     
     

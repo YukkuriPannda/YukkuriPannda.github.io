@@ -5,6 +5,7 @@
     width: 175px;
     height: 175px;
     margin: 40px auto;
+    margin-left: 0;
 }
 .headExplain.Mobile{
     text-align: center;
@@ -44,5 +45,5 @@
     height: 120px;
     width: 2px;
     background-color: #1b1b1b;
-    margin: auto 0;
+    margin: auto;
 }

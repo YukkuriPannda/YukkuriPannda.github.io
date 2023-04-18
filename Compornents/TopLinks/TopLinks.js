@@ -8,6 +8,7 @@ export default function TopLinks(props){
         <div className={`${ClassName} ${style.link}`}>
             <Link href='/'><p>Home</p></Link>
             <Link href='/AboutMe'><p>AboutMe</p></Link>
+            <Link href='/Photos'><p>Photos</p></Link>
             <Link href='/Blog'><p>Blog</p></Link>
             <Link href='/HandOuts'><p>HandOuts</p></Link>
         </div>

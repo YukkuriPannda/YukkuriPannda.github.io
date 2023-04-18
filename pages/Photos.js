@@ -4,7 +4,6 @@ import style from '../styles/Home.module.css'
 import CalenderPlanField from '../Compornents/BasicCard/CalenderPlanField';
 import Title from '../Compornents/Title/Title';
 import TopLinks from '../Compornents/TopLinks/TopLinks';
-import LoginField from '../Compornents/AuthField/LoginField';
 import { useEffect, useState } from 'react';
 
 export default function Home() {
@@ -25,7 +24,7 @@ export default function Home() {
       <Title deviceType = {DeviceType}/>
       <TopLinks deviceType = {DeviceType}/>
       <div className={`main${DeviceType}`}>
-        <LoginField/>
+        
       </div>
     </div>
     
